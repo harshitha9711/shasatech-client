@@ -1,0 +1,32 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  background: #020617;
+  color: white;
+  font-family: Arial, sans-serif;
+}
+
+a {
+  text-decoration: none;
+}
+
+.whatsapp-btn{
+  position:fixed;
+
+  bottom:30px;
+  right:30px;
+
+  background:#22c55e;
+
+  color:white;
+
+  padding:15px 20px;
+
+  border-radius:50px;
+
+  z-index:999;
+}
