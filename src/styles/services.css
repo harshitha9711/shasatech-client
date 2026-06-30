@@ -55,14 +55,7 @@
   display:block;
 }
 
-.service-box:hover{
-  transform:translateY(-10px);
 
-  border-color:#2563eb;
-
-  box-shadow:
-  0 15px 40px rgba(37,99,235,.15);
-}
 
 .service-box h2{
   margin-bottom:20px;
@@ -107,27 +100,128 @@
   transform:translateX(5px);
 }
 
-/* ========================= */
-/* MOBILE */
-/* ========================= */
+/* ================================= */
+/* LAPTOP */
+/* ================================= */
 
-@media(max-width:768px){
+@media (max-width:1200px){
+
+  .service-list{
+
+    grid-template-columns:repeat(2,1fr);
+
+  }
+
+}
+
+/* ================================= */
+/* TABLET */
+/* ================================= */
+
+@media (max-width:992px){
 
   .page-hero{
-    padding:120px 6% 70px;
+
+    padding:160px 6% 80px;
+
   }
 
   .page-hero h1{
-    font-size:2.8rem;
+
+    font-size:3.2rem;
+
+  }
+
+  .page-hero p{
+
+    font-size:1.05rem;
+
   }
 
   .service-list{
-    padding:0 6% 80px;
+
+    padding:0 6% 90px;
+
+    grid-template-columns:repeat(2,1fr);
+
+    gap:25px;
+
+  }
+
+}
+
+/* ================================= */
+/* MOBILE */
+/* ================================= */
+
+@media (max-width:768px){
+
+  .page-hero{
+
+    padding:140px 6% 60px;
+
+  }
+
+  .page-hero h1{
+
+    font-size:2.4rem;
+
+    line-height:1.2;
+
+  }
+
+  .page-hero p{
+
+    font-size:1rem;
+
+    line-height:1.8;
+
+  }
+
+  .service-list{
+
+    padding:0 6% 70px;
+
+    grid-template-columns:1fr;
+
   }
 
   .service-box{
-    min-height:auto;
-    padding:30px;
+
+    padding:25px;
+
+  }
+
+  .service-box h2{
+
+    font-size:1.4rem;
+
+  }
+
+}
+
+/* ================================= */
+/* SMALL MOBILE */
+/* ================================= */
+
+@media (max-width:480px){
+
+  .page-hero h1{
+
+    font-size:2rem;
+
+  }
+
+  .page-hero p{
+
+    font-size:.95rem;
+
+  }
+
+  .service-box h2{
+
+    font-size:1.25rem;
+
   }
 
 }

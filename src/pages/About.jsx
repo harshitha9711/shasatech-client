@@ -1,5 +1,12 @@
 import "../styles/about.css";
-
+import pardhaImg from "../assets/team/pardha-saradhi.jpeg";
+import vijayImg from "../assets/team/vijay-shankar.jpeg";
+import legalImg from "../assets/team/prabhakara-chary.jpeg";
+import jahanaviImg from "../assets/team/jahanavi.jpeg";
+import rahulImg from "../assets/team/rahul.jpeg";
+import papaImg from "../assets/team/papa-chary.jpeg";
+import harshaImg from "../assets/team/sri-harsha.jpeg";
+import rishiImg from "../assets/team/rishi.jpeg";
 function About() {
   return (
     <div className="about-page">
@@ -149,6 +156,158 @@ function About() {
         </div>
 
       </section>
+
+<section className="team-section">
+
+<h2>Meet Our Team</h2>
+
+<p className="team-subtitle">
+Dedicated professionals working together to build innovative
+software solutions, educational programs and technology for the future.
+</p>
+
+<div className="team-grid">
+
+<div className="team-card">
+
+<img src={pardhaImg} alt="Pardha Saradhi"/>
+
+<h3>Solleti Pardha Saradhi</h3>
+
+<span>
+Founder • CEO • Web Designer
+</span>
+
+<p>
+Leads the company's vision and business strategy while designing
+modern websites and digital experiences that combine creativity,
+innovation and functionality.
+</p>
+
+</div>
+
+<div className="team-card">
+
+<img src={vijayImg} alt="Vijay Shankar"/>
+
+<h3>Chidirala Vijay Shankar</h3>
+
+<span>
+Curriculum Designer
+</span>
+
+<p>
+Designs structured learning modules, educational content and
+training materials for AI, Robotics and future technology programs.
+</p>
+
+</div>
+
+<div className="team-card">
+
+<img src={legalImg} alt="Prabhakara Chary"/>
+
+<h3>D. Prabhakara Chary</h3>
+
+<span>
+Legal Advisor
+</span>
+
+<p>
+Provides legal guidance and compliance support while helping
+the company operate professionally and responsibly.
+</p>
+
+</div>
+
+<div className="team-card">
+
+<img src={jahanaviImg} alt="Jahanavi"/>
+
+<h3>G. Jahanavi</h3>
+
+<span>
+Curriculum Designer • Software Tester
+</span>
+
+<p>
+Develops educational content and performs software testing to
+ensure quality, usability and reliability.
+</p>
+
+</div>
+
+<div className="team-card">
+
+<img src={rahulImg} alt="Rahul"/>
+
+<h3>K. Rahul</h3>
+
+<span>
+Curriculum Designer
+</span>
+
+<p>
+Creates practical learning materials that help students develop
+technical skills through engaging activities.
+</p>
+
+</div>
+
+<div className="team-card">
+
+<img src={papaImg} alt="Papa Chary"/>
+
+<h3>D. Papa Chary</h3>
+
+<span>
+Team Lead • Project Coordinator
+</span>
+
+<p>
+Coordinates projects, supports teamwork and ensures smooth
+communication throughout every development phase.
+</p>
+
+</div>
+
+<div className="team-card">
+
+<img src={harshaImg} alt="Sri Harsha"/>
+
+<h3>K. Sri Harsha</h3>
+
+<span>
+Technical Team Member
+</span>
+
+<p>
+Supports software development and contributes to technology
+projects with dedication and teamwork.
+</p>
+
+</div>
+
+<div className="team-card">
+
+<img src={rishiImg} alt="Rishi"/>
+
+<h3>S. Rishi</h3>
+
+<span>
+Technical Team Member
+</span>
+
+<p>
+Assists in development activities and collaborates with the
+team to deliver reliable technology solutions.
+</p>
+
+</div>
+
+</div>
+
+</section>
 
     </div>
   );

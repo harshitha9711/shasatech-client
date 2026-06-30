@@ -1,39 +1,70 @@
 import { useState } from "react";
-import { Link } from "react-router-dom";
+import { Link, NavLink } from "react-router-dom";
 import "../styles/navbar.css";
-function Navbar() {
 
+function Navbar() {
   const [menuOpen, setMenuOpen] = useState(false);
+
+  const closeMenu = () => setMenuOpen(false);
 
   return (
     <nav className="navbar">
 
-      <div className="logo">
-        Shasa Tech
-      </div>
+      <Link to="/" className="logo">
+  <span className="logo-main">Shasa</span>
+  <span className="logo-accent">Tech</span>
+</Link>
 
       <div
-        className="menu-icon"
-        onClick={() => setMenuOpen(!menuOpen)}
-      >
-        ☰
-      </div>
+  className="menu-icon"
+  onClick={() => setMenuOpen(!menuOpen)}
+>
+  {menuOpen ? "✕" : "☰"}
+</div>
 
       <ul className={menuOpen ? "nav-links active" : "nav-links"}>
 
-        <li><Link to="/">Home</Link></li>
+        <li>
+          <NavLink to="/" end onClick={closeMenu}>
+            Home
+          </NavLink>
+        </li>
 
-        <li><Link to="/services">Services</Link></li>
+        <li>
+          <NavLink to="/services" onClick={closeMenu}>
+            Services
+          </NavLink>
+        </li>
 
-        <li><Link to="/portfolio">Portfolio</Link></li>
+        <li>
+          <NavLink to="/portfolio" onClick={closeMenu}>
+            Portfolio
+          </NavLink>
+        </li>
 
-        <li><Link to="/about">About</Link></li>
+        <li>
+          <NavLink to="/about" onClick={closeMenu}>
+            About
+          </NavLink>
+        </li>
 
-        <li><Link to="/contact">Contact</Link></li>
+        <li>
+          <NavLink to="/contact" onClick={closeMenu}>
+            Contact
+          </NavLink>
+        </li>
+
+        <li>
+          <Link
+            to="/contact"
+            className="quote-btn"
+            onClick={closeMenu}
+          >
+            Get Free Consultation
+          </Link>
+        </li>
 
       </ul>
-
-      
 
     </nav>
   );

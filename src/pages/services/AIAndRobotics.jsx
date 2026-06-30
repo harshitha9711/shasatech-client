@@ -1,5 +1,6 @@
 import aiPoster from "../../assets/projects/ai-poster.jpeg";
 import "../../styles/service-detail.css";
+import roboticsImg from "../../assets/projects/robotics.jpeg";
 import { Link } from "react-router-dom";
 function AIAndRobotics() {
 
@@ -28,6 +29,17 @@ function AIAndRobotics() {
       title: "Future Technologies",
       desc: "Exposure to emerging technologies preparing students for future careers."
     }
+,
+    {
+  title: "ESP32 Obstacle Avoidance Robot",
+  desc:
+    "Students learn robotics using ESP32 microcontrollers, ultrasonic sensors and motor control systems. The robot detects obstacles and automatically changes direction, helping students understand embedded systems, automation and intelligent navigation."
+},
+{
+  title: "IoT & Smart Systems",
+  desc:
+    "Students explore Internet of Things concepts by connecting sensors, controllers and smart devices."
+}
   ];
 
   const benefits = [
@@ -61,6 +73,48 @@ function AIAndRobotics() {
 
       </section>
 
+<section className="robotics-section">
+
+  <div className="section-header">
+    <h2>Robotics Projects</h2>
+
+    <p>
+      Practical robotics learning through real-world
+      projects and hands-on innovation.
+    </p>
+  </div>
+
+  <div className="robotics-container">
+
+    <img
+      src={roboticsImg}
+      alt="ESP32 Obstacle Avoidance Robot"
+      className="robotics-image"
+    />
+
+    <div className="robotics-content">
+
+      <h3>ESP32 Obstacle Avoidance Robot</h3>
+
+      <p>
+        Students build and program intelligent robots
+        using ESP32 microcontrollers, ultrasonic sensors,
+        motor drivers and wireless communication.
+      </p>
+
+      <p>
+        The robot automatically detects obstacles and
+        changes direction without human intervention,
+        helping students understand embedded systems,
+        automation, sensor integration and robotics
+        programming.
+      </p>
+
+    </div>
+
+  </div>
+
+</section>
       <section className="features-section">
 
         <h2>Program Highlights</h2>
@@ -110,6 +164,8 @@ function AIAndRobotics() {
 </Link>
           
       </section>
+
+
 
     </div>
   );

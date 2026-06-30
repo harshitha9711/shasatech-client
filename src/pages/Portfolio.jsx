@@ -1,6 +1,6 @@
 import schoolImg from "../assets/projects/school.png";
 import websiteImg from "../assets/projects/buisness.png";
-import aiImg from "../assets/projects/ai.png";
+import aiImg from "../assets/projects/ai.jpeg";
 import appImg from "../assets/projects/mobile.png";
 
 import "../styles/portfolio.css";

@@ -1,8 +1,8 @@
 import schoolImg from "../assets/projects/school.png";
 import businessImg from "../assets/projects/buisness.png";
 import mobileImg from "../assets/projects/mobile.png";
-import aiImg from "../assets/projects/ai.png";
-
+import aiImg from "../assets/projects/ai.jpeg";
+import { Link } from "react-router-dom";
 import "../styles/home.css";
 
 function Hero() {
@@ -32,39 +32,62 @@ function Hero() {
 
     <div className="hero-buttons">
 
-      <button className="primary-btn">
-        Explore Services
-      </button>
+  <Link
+    to="/services"
+    className="primary-btn"
+  >
+    Explore Services
+  </Link>
 
-      <button className="secondary-btn">
-        View Portfolio
-      </button>
+  <Link
+    to="/portfolio"
+    className="secondary-btn"
+  >
+    View Portfolio
+  </Link>
 
-    </div>
+</div>
 
   </div>
 
 <div className="hero-right">
 
-  <div className="showcase-card">
-    <img src={schoolImg} alt="School ERP" />
-    <span>School ERP</span>
-  </div>
+  <Link
+  to="/services/school-management"
+  className="showcase-card"
+>
 
-  <div className="showcase-card">
+  <img src={schoolImg} alt="School ERP"/>
+
+  <span>School ERP</span>
+
+</Link>
+
+  <Link
+to="/services/website-development"
+className="showcase-card"
+>
+
     <img src={businessImg} alt="Website Development" />
     <span>Web Development</span>
-  </div>
+  </Link>
 
-  <div className="showcase-card">
+  <Link
+to="/services/mobile-app-development"
+className="showcase-card"
+>
     <img src={mobileImg} alt="Mobile App" />
     <span>Mobile Apps</span>
-  </div>
+  </Link>
 
-  <div className="showcase-card">
+  <Link
+to="/services/ai-robotics"
+className="showcase-card"
+>
+
     <img src={aiImg} alt="AI Solutions" />
-    <span>AI Solutions</span>
-  </div>
+    <span>AI Robotics</span>
+  </Link>
 
 </div>
 

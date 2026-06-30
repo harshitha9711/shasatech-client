@@ -91,3 +91,91 @@
 
   color:#94a3b8;
 }
+
+/* ================================= */
+/* TABLET */
+/* ================================= */
+
+@media (max-width:992px){
+
+  .footer-top{
+    padding:80px 6%;
+  }
+
+  .footer-top h2{
+    font-size:2.6rem;
+  }
+
+  .footer-grid{
+    padding:60px 6%;
+    gap:35px;
+  }
+
+}
+
+/* ================================= */
+/* MOBILE */
+/* ================================= */
+
+@media (max-width:768px){
+
+  .footer{
+    margin-top:80px;
+  }
+
+  .footer-top{
+    padding:70px 6%;
+  }
+
+  .footer-top h2{
+    font-size:2rem;
+    line-height:1.3;
+  }
+
+  .footer-top p{
+    font-size:1rem;
+    line-height:1.8;
+  }
+
+  .footer-cta{
+    width:100%;
+    max-width:320px;
+  }
+
+  .footer-grid{
+    grid-template-columns:1fr;
+    gap:40px;
+    padding:60px 6%;
+    text-align:center;
+  }
+
+  .footer-brand{
+    text-align:center;
+  }
+
+  .footer ul{
+    padding:0;
+  }
+
+  .footer-bottom{
+    padding:20px 6%;
+    font-size:.9rem;
+  }
+
+}
+
+/* ================================= */
+/* SMALL MOBILE */
+/* ================================= */
+
+@media (max-width:480px){
+
+  .footer-top h2{
+    font-size:1.8rem;
+  }
+
+  .footer-top p{
+    font-size:.95rem;
+  }
+
+}
