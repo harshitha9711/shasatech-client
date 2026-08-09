@@ -1,23 +1,29 @@
 import { Link } from "react-router-dom";
 
+import rajImg from "../assets/team/raj-kumar.jpeg";
 import pardhaImg from "../assets/team/pardha-saradhi.jpeg";
 import papaImg from "../assets/team/papa-chary.jpeg";
 import vijayImg from "../assets/team/vijay-shankar.jpeg";
-import legalImg from "../assets/team/prabhakara-chary.jpeg";
 
 function TeamPreview() {
 
   const team = [
 
     {
+      name: "Raj Kumar",
+      role: "CEO",
+      image: rajImg
+    },
+
+    {
       name: "Solleti Pardha Saradhi",
-      role: "Founder • CEO • Web Designer",
+      role: "Team Lead • Web Designer",
       image: pardhaImg
     },
 
     {
       name: "D. Papa Chary",
-      role: "Team Lead • Project Coordinator",
+      role: "Project Coordinator",
       image: papaImg
     },
 
@@ -25,12 +31,6 @@ function TeamPreview() {
       name: "Chidirala Vijay Shankar",
       role: "Curriculum Designer",
       image: vijayImg
-    },
-
-    {
-      name: "D. Prabhakara Chary",
-      role: "Legal Advisor",
-      image: legalImg
     }
 
   ];
@@ -54,6 +54,7 @@ function TeamPreview() {
         </p>
 
       </div>
+
 
       <div className="team-preview-grid">
 
@@ -79,14 +80,13 @@ function TeamPreview() {
 
       </div>
 
+
       <div className="team-btn">
 
         <Link to="/about">
 
           <button className="primary-btn">
-
             View Complete Team
-
           </button>
 
         </Link>

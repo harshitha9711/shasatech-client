@@ -51,7 +51,7 @@ function Footer() {
 
           <h4>Contact</h4>
 
-          <p>📞 +91 9642659228</p>
+          <p>📞 +91 96426 59228</p>
 
           <p>✉️ shasatech0910@gmail.com</p>
 

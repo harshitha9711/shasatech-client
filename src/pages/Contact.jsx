@@ -69,7 +69,7 @@ solution and consultation.
 
           <div className="info-card">
             <h3>📞 Phone</h3>
-            <p>+91 9642659228</p>
+            <p>+91 96426 59228</p>
           </div>
 
           <div className="info-card">
