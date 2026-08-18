@@ -9,7 +9,7 @@ import papaImg from "../assets/team/papa-chary.jpeg";
 import harshaImg from "../assets/team/sri-harsha.jpeg";
 import rishiImg from "../assets/team/rishi.jpeg";
 import rajImg from "../assets/team/raj-kumar.jpeg";
-
+import shlokImg from "../assets/team/shlok.jpeg";
 function About() {
 
   const team = [
@@ -84,6 +84,14 @@ function About() {
       description:
         "Assists in development activities and collaborates with the team to deliver reliable technology solutions."
     }
+    ,
+    {
+  name: "Shlok",
+  role: "Technical Team Member",
+  image: shlokImg,
+  description:
+    "Contributes to software development and technical activities, supporting the team in building reliable and user-focused technology solutions."
+},
   ];
 
   return (
